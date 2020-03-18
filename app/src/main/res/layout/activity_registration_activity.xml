@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pharmacieapplication.registration_activity"
+    android:orientation="vertical"
+    android:background="@drawable/bakgroud_interface">
+<LinearLayout
+    android:padding="40dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="110dp">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="adresse email "></EditText>
+
+    <EditText
+    android:layout_width="match_parent"
+        android:layout_marginTop="16dp"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:text="nom de pharmacie"
+    >
+    </EditText>
+
+    <EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:text="mot de passe "
+    >
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/position_idd"
+            android:onClick="maps_position"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="4"
+            android:background="@android:color/transparent"
+            android:drawableRight="@drawable/ic_room_black_24dp"
+            >
+
+
+        </Button>
+
+       <TextView
+           android:layout_width="291dp"
+           android:layout_height="35dp"
+           android:layout_weight="1"
+           android:text="adresse de pharmacie!">
+
+       </TextView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/registre_idd"
+        android:onClick="registrebuton"
+        android:layout_gravity="center"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Registre"
+        android:background="@drawable/corner">
+
+    </Button>
+    <TextView
+        android:id="@+id/jai_compt_id"
+        android:onClick="jai_un_compte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="J'ai un compte"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:textStyle="bold">
+
+    </TextView>
+</LinearLayout>
+</LinearLayout>
